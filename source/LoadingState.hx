@@ -318,3 +318,33 @@ class MultiCallback
 	public function getFired() return fired.copy();
 	public function getUnfired() return [for (id in unfired.keys()) id];
 }
+
+//if you want to add the vpad to a state
+#if mobile
+addVirtualPad(LEFT_FULL, A_B);
+#end
+
+//if you want it to have a camera
+#if mobile
+addVirtualPadCamera();
+#end
+
+//if you want to remove it at some moment use
+#if mobile
+removeVirtualPad();
+#end
+
+//if you want to add the hitbox to a state
+#if mobile
+addHitbox();
+#end
+
+//if you want it to have a camera
+#if mobile
+addHitboxCamera();
+#end
+
+//if you want to remove it at some moment use
+#if mobile
+removeHitbox();
+#end
